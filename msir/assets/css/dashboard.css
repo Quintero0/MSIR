@@ -1,0 +1,178 @@
+/* ============================= */
+/* GENERAL STYLING               */
+/* ============================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#f4f4f4;
+}
+
+/* ============================= */
+/* PAGE LAYOUT                   */
+/* ============================= */
+
+.wrapper{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ============================= */
+/* SIDEBAR                       */
+/* ============================= */
+
+.sidebar{
+    width:250px;
+    background-color:darkgreen;
+    color:white;
+    padding:20px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo h2{
+    font-weight:bold;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+}
+
+.sidebar ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:5px;
+}
+
+.sidebar ul li a:hover{
+    background-color:gold;
+    color:black;
+}
+
+.sidebar ul li.active a{
+    background-color:gold;
+    color:black;
+}
+
+/* ============================= */
+/* MAIN CONTENT                  */
+/* ============================= */
+
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+/* ============================= */
+/* PAGE HEADER                   */
+/* ============================= */
+
+.page-header{
+    margin-bottom:30px;
+}
+
+.page-header h2{
+    color:darkgreen;
+    margin-bottom:5px;
+}
+
+.page-header p{
+    color:gray;
+}
+
+/* ============================= */
+/* FORM                          */
+/* ============================= */
+
+form{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px lightgray;
+
+}
+
+.form-label{
+
+    font-weight:bold;
+
+}
+
+.form-control,
+.form-select{
+
+    margin-top:5px;
+
+}
+
+/* ============================= */
+/* BUTTONS                       */
+/* ============================= */
+
+.btn-success{
+
+    background-color:darkgreen;
+    border:none;
+
+}
+
+.btn-success:hover{
+
+    background-color:green;
+
+}
+
+.btn-secondary{
+
+    margin-left:10px;
+
+}
+
+/* ============================= */
+/* RESPONSIVE                    */
+/* ============================= */
+
+@media(max-width:768px){
+
+.wrapper{
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    width:100%;
+
+}
+
+.main-content{
+
+    padding:20px;
+
+}
+
+}
